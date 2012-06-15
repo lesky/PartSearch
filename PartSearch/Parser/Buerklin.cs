@@ -1,9 +1,10 @@
 ﻿//TODO::
-            //Typecastin                                    (erledigt 08.06.2012 Michi und Benny)
-            //-Übergabe an Modell                           (erledigt 08.06.2012 Michi und Benny)
+            //Typecastin (kein Typkasting mehr in Funktion)                               (erledigt 08.06.2012 Michi und Benny)
+            //-Übergabe an Modell (wurde am 15.6 nochmal überarbeitet                     (erledigt 08.06.2012 Michi und Benny)
             //-Eventuell Strings weiter Bearbeiten
-            //Bedinung in foreach eintragen (bei.....)      (erledigt 08.06.2012 Benny)
-            //SET Routinen fuer Product einarbeiten
+            //Bedinung in foreach eintragen (bei.....) (nicht mehr in Funktion enthalten) (erledigt 08.06.2012 Benny)
+            //SET Routinen fuer Product einarbeiten(nicht mehr nötig)
+            // Neuen Filter Entwickeln
 
 
 using System;
@@ -51,6 +52,20 @@ namespace PartSearch.Parser
 
            foreach (IEnumerable<HtmlNode> table in doc.DocumentNode.Descendants("//table[@class='Artikelliste']"))
            {
+               // Möglicher Lösungsweg:
+               // Artikelliste in Variable Schreiben
+               // Boddi Vinden
+               // tBody in vartbodddy Schreiben
+               // Solange tbody Klassen enthält:
+                     // Schreibe erste Hell Klasse in varclasse
+                     // Were varclasse
+                     // Übergebe Daten an Modell
+                     // Entferne varHell aus vartbodddy
+                     // Schreibe erste Dunkel Klasse in varclasse
+                     // Were varclasse Aus
+                     // Übergebe Daten an Modell
+                     // Entferne varHell aus vartbodddy
+
                //FIXME!!!
                foreach (HtmlNode line in table)
                {
